@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สินค้าและบริการ | NRRU Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo">NRRU <span>SHOP</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="Salespage.html" class="active">สินค้า/บริการ</a></li>
+            <li><a href="about.html">ข้อมูลส่วนตัว</a></li>
+            <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="cart-container">
+    <div class="cart-status">
+        <img src="img/32.png" alt="cart" class="cart-icon">
+        <span>ตะกร้า:</span> <b id="cart-count">0</b>
+    </div>
+</div>
+
+<main class="container">
+    <h2 class="section-title">รายการสินค้าทั้งหมด</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-img-box"><img src="img/1.jpg" alt="สินค้า 1"></div>
+            <h3>เสื้อคณะ Sci-Tech</h3>
+            <p class="price">฿360</p>
+            <button class="btn-buy" onclick="addToCart('เสื้อคณะ', 360)">+ เพิ่มลงตะกร้า</button>
+        </div>
+        <div class="product-card">
+            <div class="product-img-box"><img src="img/2.jpg" alt="สินค้า 2"></div>
+            <h3>เสื้อตะโกราย</h3>
+            <p class="price">฿360</p>
+            <button class="btn-buy" onclick="addToCart('เสื้อตะโกราย', 360)">+ เพิ่มลงตะกร้า</button>
+        </div>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
