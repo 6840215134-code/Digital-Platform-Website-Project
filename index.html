@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NRRU SHOP | หน้าแรก</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo">NRRU <span>SHOP</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">หน้าแรก</a></li>
+            <li><a href="Salespage.html">สินค้า/บริการ</a></li>
+            <li><a href="about.html">ข้อมูลส่วนตัว</a></li>
+            <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="cart-container">
+    <div class="cart-status">
+        <img src="img/32.png" alt="cart" class="cart-icon">
+        <span>ตะกร้า:</span> <b id="cart-count">0</b>
+    </div>
+</div>
+
+<section class="hero-v2">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <div class="badge-official">OFFICIAL STORE</div>
+            <h1>NRRU SCI-TECH SHOP</h1>
+            <p>แหล่งรวมสินค้าที่ระลึกจากคณะวิทยาศาสตร์และเทคโนโลยี</p>
+            <a href="Salespage.html" class="btn-hero">เลือกซื้อสินค้า</a>
+        </div>
+    </div>
+</section>
+
+<main class="container">
+    <section class="products">
+        <h2 class="section-title">สินค้าแนะนำ</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="badge-hot">🔥 HOT</div>
+                <div class="product-img-box"><img src="img/1.jpg" alt="สินค้า 1"></div>
+                <h3>เสื้อคณะ Sci-Tech</h3>
+                <p class="price">฿350</p>
+                <button class="btn-buy" onclick="addToCart('เสื้อคณะ', 350)">+ เพิ่มลงตะกร้า</button>
+            </div>
+            <div class="product-card">
+                <div class="badge-hot">🔥 HOT</div>
+                <div class="product-img-box"><img src="img/2.jpg" alt="สินค้า 2"></div>
+                <h3>เสื้อตะโกราย</h3>
+                <p class="price">฿350</p>
+                <button class="btn-buy" onclick="addToCart('เสื้อตะโกราย', 350)">+ เพิ่มลงตะกร้า</button>
+            </div>
+            <div class="product-card">
+                <div class="badge-hot">🔥 HOT</div>
+                <div class="product-img-box"><img src="img/3.jpg" alt="สินค้า 3"></div>
+                <h3>เสื้อนักกีฬา</h3>
+                <p class="price">฿350</p>
+                <button class="btn-buy" onclick="addToCart('เสื้อนักกีฬา', 350)">+ เพิ่มลงตะกร้า</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 NRRU SHOP - คณะวิทยาศาสตร์และเทคโนโลยี</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
